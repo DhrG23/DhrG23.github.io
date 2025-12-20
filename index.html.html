@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dhruv Gautam | AI & Backend Developer</title>
+    <meta name="description" content="Portfolio of Dhruv Gautam, Top 20 AI Youth Innovator and CS Undergraduate specializing in Applied AI and Backend Engineering.">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                darkbg: '#0f172a', // Deep blue-gray background
+                accent: '#3b82f6', // Bright blue for buttons/links
+                secondary: '#94a3b8', // Lighter gray for secondary text
+              }
+            }
+          }
+        }
+      </script>
+      <style>
+        /* Simple CSS reset and base styles */
+        body { font-family: sans-serif; }
+      </style>
+</head>
+<body class="bg-darkbg text-gray-100 leading-relaxed">
+
+    <nav class="sticky top-0 z-50 bg-darkbg/90 backdrop-blur-sm border-b border-gray-800 py-4">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <a href="#" class="text-xl font-bold tracking-wider">DHRUV G.</a>
+            <div class="space-x-6 text-sm font-medium hidden md:block">
+                <a href="#about" class="hover:text-accent transition">About</a>
+                <a href="#skills" class="hover:text-accent transition">Skills</a>
+                <a href="#projects" class="hover:text-accent transition">Projects</a>
+                <a href="#achievements" class="hover:text-accent transition">Awards</a>
+            </div>
+            <div class="md:hidden text-2xl">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <section id="hero" class="min-h-[80vh] flex items-center pt-20 pb-32">
+        <div class="container mx-auto px-6 text-center md:text-left md:flex items-center justify-between">
+            <div class="md:w-2/3">
+                <p class="text-accent font-medium mb-4">Hi, my name is</p>
+                <h1 class="text-5xl md:text-7xl font-bold mb-6">Dhruv Gautam.</h1>
+                <h2 class="text-3xl md:text-5xl font-bold text-secondary mb-8">I build local AI workflows & scalable backends.</h2>
+                <p class="text-secondary text-lg max-w-xl mb-10">
+                    First-year CS undergraduate specializing in Applied AI. Combining cutting-edge LLMs with robust engineering to solve real-world problems.
+                </p>
+                <div class="flex gap-4 justify-center md:justify-start">
+                    <a href="#projects" class="px-8 py-3 bg-accent hover:bg-blue-600 text-white rounded-md font-medium transition shadow-lg shadow-blue-500/25">
+                        View My Work
+                    </a>
+                    <a href="mailto:dhruv23gautam@gmail.com" class="px-8 py-3 border border-accent text-accent hover:bg-accent/10 rounded-md font-medium transition">
+                        Contact Me
+                    </a>
+                </div>
+                 <div class="mt-12 flex gap-6 justify-center md:justify-start text-2xl text-secondary">
+                    <a href="[YOUR LINKEDIN URL]" target="_blank" class="hover:text-accent transition"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/DhrG23" target="_blank" class="hover:text-accent transition"><i class="fa-brands fa-github"></i></a>
+                    <a href="mailto:dhruv23gautam@gmail.com" class="hover:text-accent transition"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+            </div>
+             </div>
+    </section>
+
+    <section class="bg-blue-900/30 border-y border-blue-900/50 py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-lg md:text-xl font-semibold">
+                <i class="fa-solid fa-trophy text-accent mr-2"></i>
+                Recognized as a <span class="text-accent">Top 20 AI Youth Innovator</span> & selected to present technical prototypes to the <span class="text-accent">Prime Minister of India</span>.
+            </p>
+        </div>
+    </section>
+
+
+    <section id="skills" class="py-24">
+        <div class="container mx-auto px-6">
+            <h2 class="section-title text-3xl font-bold mb-12 flex items-center"><span class="text-accent mr-4">01.</span> Technical Skills</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gray-800/50 p-6 rounded-lg border border-gray-700 hover:border-accent transition">
+                    <h3 class="text-xl font-semibold mb-4 text-accent"><i class="fa-solid fa-brain mr-2"></i> AI & Machine Learning</h3>
+                    <ul class="space-y-2 text-secondary">
+                        <li><i class="fa-solid fa-check text-xs mr-2"></i> Ollama (Local LLMs)</li>
+                        <li><i class="fa-solid fa-check text-xs mr-2"></i> Hugging Face Transformers</li>
+                        <li><i class="fa-solid fa-check text-xs mr-2"></i> TensorFlow / Keras</li>
+                        <li><i class="fa-solid fa-check text-xs mr-2"></i> Computer Vision (CNNs)</li>
+                        <li><i class="fa-solid fa-check text-xs mr-2"></i> Audio Signal Processing</li>
+                    </ul>
+                </div>
+                 <div class="bg-gray-800/50 p-6 rounded-lg border border-gray-700 hover:border-accent transition">
+                    <h3 class="text-xl font-semibold mb-4 text-accent"><i class="fa-solid fa-server mr-2"></i> Backend & Tools</h3>
+                    <ul class="space-y-2 text-secondary">
+                        <li><i class="fa-solid fa-check text-xs mr-2"></i> FastAPI (Python)</li>
+                        <li><i class="fa-solid fa-check text-xs mr-2"></i> Docker & Containerization</li>
+                        <li><i class="fa-solid fa-check text-xs mr-2"></i> Git & GitHub</li>
+                        <li><i class="fa-solid fa-check text-xs mr-2"></i> REST APIs / Postman</li>
+                        <li><i class="fa-solid fa-check text-xs mr-2"></i> VS Code</li>
+                    </ul>
+                </div>
+                 <div class="bg-gray-800/50 p-6 rounded-lg border border-gray-700 hover:border-accent transition">
+                    <h3 class="text-xl font-semibold mb-4 text-accent"><i class="fa-solid fa-code mr-2"></i> Languages</h3>
+                    <div class="flex flex-wrap gap-3 mt-4">
+                        <span class="px-3 py-1 bg-blue-900/50 text-blue-200 text-sm rounded-full">Python (Advanced)</span>
+                        <span class="px-3 py-1 bg-gray-700 text-gray-300 text-sm rounded-full">Java</span>
+                        <span class="px-3 py-1 bg-gray-700 text-gray-300 text-sm rounded-full">JavaScript</span>
+                        <span class="px-3 py-1 bg-gray-700 text-gray-300 text-sm rounded-full">HTML5/CSS3</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="projects" class="py-24 bg-gray-900/50">
+        <div class="container mx-auto px-6">
+            <h2 class="section-title text-3xl font-bold mb-12 flex items-center"><span class="text-accent mr-4">02.</span> Featured Projects</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                
+                <div class="group bg-darkbg rounded-xl overflow-hidden border border-gray-800 hover:border-accent transition-all duration-300 hover:-translate-y-2">
+                    <div class="h-48 bg-gray-700 overflow-hidden relative">
+                         <img src="https://via.placeholder.com/600x300/1e293b/3b82f6?text=LangCoach+Project" alt="LangCoach" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 flex justify-between">
+                            LangCoach
+                            <div class="flex gap-3 text-secondary">
+                                <a href="https://github.com/DhrG23/LangCoach.git" target="_blank" class="hover:text-accent"><i class="fa-brands fa-github"></i></a>
+                                </div>
+                        </h3>
+                        <p class="text-secondary text-sm mb-4">A privacy-focused AI language learning assistant. It integrates Montreal Forced Aligner for phoneme-level feedback and uses Ollama for local LLM inference, ensuring no data leaves the device.</p>
+                        <div class="flex flex-wrap gap-2 text-xs font-mono text-accent">
+                            <span>FastAPI</span> <span>Docker</span> <span>Ollama (Local AI)</span> <span>Python</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group bg-darkbg rounded-xl overflow-hidden border border-gray-800 hover:border-accent transition-all duration-300 hover:-translate-y-2">
+                    <div class="h-48 bg-gray-700 overflow-hidden relative">
+                        <div class="absolute top-2 right-2 bg-accent text-white text-xs font-bold px-2 py-1 rounded">Presented to PM</div>
+                         <img src="https://via.placeholder.com/600x300/1e293b/3b82f6?text=RespiroGuard" alt="RespiroGuard" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition">
+                    </div>
+                    <div class="p-6">
+                         <h3 class="text-xl font-bold mb-2 flex justify-between">
+                            RespiroGuard
+                            <div class="flex gap-3 text-secondary">
+                                <a href="https://github.com/DhrG23/RespiroGuard.git" target="_blank" class="hover:text-accent"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </h3>
+                        <p class="text-secondary text-sm mb-4">An innovative health-tech prototype that utilizes audio signal processing to detect specific breathing patterns and coughing sounds indicative of respiratory illnesses.</p>
+                        <div class="flex flex-wrap gap-2 text-xs font-mono text-accent">
+                            <span>Audio Processing</span> <span>AI/ML</span> <span>Python</span> <span>HealthTech</span>
+                        </div>
+                    </div>
+                </div>
+
+                 <div class="group bg-darkbg rounded-xl overflow-hidden border border-gray-800 hover:border-accent transition-all duration-300 hover:-translate-y-2">
+                    <div class="h-48 bg-gray-700 overflow-hidden relative">
+                         <img src="https://via.placeholder.com/600x300/1e293b/3b82f6?text=MedicSite+AI" alt="MedicSite" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition">
+                    </div>
+                    <div class="p-6">
+                         <h3 class="text-xl font-bold mb-2 flex justify-between">
+                            MedicSite
+                            <div class="flex gap-3 text-secondary">
+                                <a href="https://github.com/DhrG23/Medic-Site.git" target="_blank" class="hover:text-accent"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </h3>
+                        <p class="text-secondary text-sm mb-4">An AI-powered healthcare website. I trained custom TensorFlow CNN models to detect Lung & Breast Cancer from medical imagery and integrated the inference engine into the web UI.</p>
+                        <div class="flex flex-wrap gap-2 text-xs font-mono text-accent">
+                            <span>TensorFlow</span> <span>CNNs</span> <span>Web Dev</span> <span>HTML/JS</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="achievements" class="py-24">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row gap-12">
+            
+            <div class="md:w-1/2">
+                 <h2 class="section-title text-3xl font-bold mb-8 flex items-center"><span class="text-accent mr-4">03.</span> Achievements</h2>
+                 <ul class="space-y-6">
+                    <li class="flex items-start">
+                        <span class="text-accent mt-1 mr-4"><i class="fa-solid fa-award"></i></span>
+                        <div>
+                            <h4 class="text-lg font-bold">National Showcase to Prime Minister of India</h4>
+                            <p class="text-secondary text-sm">Selected to present RespiroGuard prototype directly to the PM at Pariksha Pe Charcha 2024.</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-accent mt-1 mr-4"><i class="fa-solid fa-award"></i></span>
+                        <div>
+                            <h4 class="text-lg font-bold">Top 20 AI Youth Innovator</h4>
+                            <p class="text-secondary text-sm">Awarded by 1 Million for 1 Billion (1M1B) foundation.</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-secondary mt-1 mr-4"><i class="fa-solid fa-trophy"></i></span>
+                        <div>
+                            <h4 class="font-bold">Top 3 Winner - ISTE AI Innovator Challenge 2024</h4>
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-secondary mt-1 mr-4"><i class="fa-solid fa-trophy"></i></span>
+                        <div>
+                            <h4 class="font-bold">Winner - Adobe AI-thon Inter-School Hackathon 2023</h4>
+                        </div>
+                    </li>
+                 </ul>
+            </div>
+
+             <div class="md:w-1/2">
+                <h2 class="section-title text-3xl font-bold mb-8 flex items-center"><span class="text-secondary mr-4">04.</span> Education</h2>
+                <div class="space-y-8 border-l-2 border-gray-800 pl-6 ml-2">
+                    <div class="relative">
+                        <span class="absolute -left-[33px] top-1 h-4 w-4 rounded-full bg-accent"></span>
+                        <h4 class="text-lg font-bold">B.Tech in Computer Science Engineering</h4>
+                        <p class="text-accent text-sm">Guru Tegh Bahadur 4th Centenary Engineering College</p>
+                        <p class="text-secondary text-sm italic">2025 – 2029 (Expected)</p>
+                    </div>
+                    <div class="relative">
+                        <span class="absolute -left-[33px] top-1 h-4 w-4 rounded-full bg-gray-700"></span>
+                        <h4 class="text-lg font-bold">Senior Secondary (PCM)</h4>
+                        <p class="text-secondary text-sm">Shaheed Rajpal DAV Public School</p>
+                        <p class="text-secondary text-sm italic">2023 – 2025</p>
+                    </div>
+                </div>
+           </div>
+        </div>
+    </section>
+
+    <footer class="bg-darkbg py-8 text-center text-secondary border-t border-gray-800">
+        <div class="container mx-auto px-6">
+            <div class="flex justify-center gap-6 mb-4 text-xl">
+                <a href="[YOUR LINKEDIN URL]" target="_blank" class="hover:text-accent transition"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/DhrG23" target="_blank" class="hover:text-accent transition"><i class="fa-brands fa-github"></i></a>
+                <a href="mailto:dhruv23gautam@gmail.com" class="hover:text-accent transition"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+            <p class="text-sm">Designed & Built by Dhruv Gautam using HTML & Tailwind CSS.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
