@@ -119,29 +119,116 @@
     </section>
 
 
-    <section id="projects" class="py-24 bg-gray-900/50">
+<section id="projects" class="py-24 bg-gray-900/50">
         <div class="container mx-auto px-6">
             <h2 class="section-title text-3xl font-bold mb-12 flex items-center"><span class="text-accent mr-4">02.</span> Featured Projects</h2>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
                 
-                <div class="group bg-darkbg rounded-xl overflow-hidden border border-gray-800 hover:border-accent transition-all duration-300 hover:-translate-y-2">
+                <div class="group bg-darkbg rounded-xl overflow-hidden border border-accent/40 shadow-lg shadow-blue-900/10 hover:border-accent transition-all duration-300 hover:-translate-y-2 flex flex-col">
                     <div class="h-48 bg-gray-700 overflow-hidden relative">
-                         <img src="https://via.placeholder.com/600x300/1e293b/3b82f6?text=LangCoach+Project" alt="LangCoach" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition">
+                        <div class="absolute top-0 right-0 bg-accent text-white text-xs font-bold px-3 py-2 rounded-bl-lg z-10">
+                            <i class="fa-solid fa-crown mr-1"></i> Presented to PM of India
+                        </div>
+                        <img src="https://via.placeholder.com/600x300/1e293b/3b82f6?text=RespiroGuard+AI" alt="RespiroGuard" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition transform group-hover:scale-105 duration-500">
                     </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2 flex justify-between">
-                            LangCoach
-                            <div class="flex gap-3 text-secondary">
-                                <a href="https://github.com/DhrG23/LangCoach.git" target="_blank" class="hover:text-accent"><i class="fa-brands fa-github"></i></a>
-                                </div>
+                    <div class="p-6 flex-1 flex flex-col">
+                         <h3 class="text-xl font-bold mb-2 flex justify-between items-center">
+                            RespiroGuard
+                            <a href="https://github.com/DhrG23/RespiroGuard.git" target="_blank" class="text-secondary hover:text-accent"><i class="fa-brands fa-github text-xl"></i></a>
                         </h3>
-                        <p class="text-secondary text-sm mb-4">A privacy-focused AI language learning assistant. It integrates Montreal Forced Aligner for phoneme-level feedback and uses Ollama for local LLM inference, ensuring no data leaves the device.</p>
-                        <div class="flex flex-wrap gap-2 text-xs font-mono text-accent">
-                            <span>FastAPI</span> <span>Docker</span> <span>Ollama (Local AI)</span> <span>Python</span>
+                        <p class="text-secondary text-sm mb-4 leading-relaxed">
+                            A respiratory health monitoring system designed to bridge the gap in early diagnosis. It utilizes audio signal processing to analyze breathing patterns and cough acoustics to detect potential respiratory diseases.
+                        </p>
+                        
+                        <div class="mb-4">
+                            <h4 class="text-xs font-bold text-gray-400 uppercase tracking-wide mb-2">Key Features:</h4>
+                            <ul class="text-sm text-gray-400 list-disc list-inside space-y-1">
+                                <li>Audio spectral analysis for cough detection</li>
+                                <li>Pattern recognition algorithms</li>
+                                <li>Real-time health anomaly alerts</li>
+                            </ul>
+                        </div>
+
+                        <div class="mt-auto pt-4 border-t border-gray-800">
+                            <p class="text-xs text-accent font-semibold mb-2"><i class="fa-solid fa-trophy mr-1"></i> Top 20 India AI Youth Awards</p>
+                            <div class="flex flex-wrap gap-2 text-xs font-mono text-blue-300">
+                                <span class="bg-blue-900/30 px-2 py-1 rounded">Python</span>
+                                <span class="bg-blue-900/30 px-2 py-1 rounded">Audio Processing</span>
+                                <span class="bg-blue-900/30 px-2 py-1 rounded">AI/ML</span>
+                            </div>
                         </div>
                     </div>
                 </div>
+
+                <div class="group bg-darkbg rounded-xl overflow-hidden border border-gray-800 hover:border-accent transition-all duration-300 hover:-translate-y-2 flex flex-col">
+                    <div class="h-48 bg-gray-700 overflow-hidden relative">
+                         <img src="https://via.placeholder.com/600x300/1e293b/3b82f6?text=LangCoach+App" alt="LangCoach" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition transform group-hover:scale-105 duration-500">
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col">
+                        <h3 class="text-xl font-bold mb-2 flex justify-between items-center">
+                            LangCoach
+                            <a href="https://github.com/DhrG23/LangCoach.git" target="_blank" class="text-secondary hover:text-accent"><i class="fa-brands fa-github text-xl"></i></a>
+                        </h3>
+                        <p class="text-secondary text-sm mb-4 leading-relaxed">
+                            A local-first AI language tutor focusing on privacy. Unlike cloud apps, LangCoach runs entirely on the user's device, using local LLMs to provide grammatical correction and pronunciation coaching.
+                        </p>
+                        
+                        <div class="mb-4">
+                            <h4 class="text-xs font-bold text-gray-400 uppercase tracking-wide mb-2">Key Features:</h4>
+                            <ul class="text-sm text-gray-400 list-disc list-inside space-y-1">
+                                <li><strong>100% Privacy:</strong> No data leaves localhost</li>
+                                <li><strong>Montreal Forced Aligner:</strong> Phoneme-level feedback</li>
+                                <li><strong>Ollama Integration:</strong> Offline LLM inference</li>
+                            </ul>
+                        </div>
+
+                        <div class="mt-auto pt-4 border-t border-gray-800">
+                            <div class="flex flex-wrap gap-2 text-xs font-mono text-blue-300">
+                                <span class="bg-blue-900/30 px-2 py-1 rounded">FastAPI</span>
+                                <span class="bg-blue-900/30 px-2 py-1 rounded">Docker</span>
+                                <span class="bg-blue-900/30 px-2 py-1 rounded">Ollama</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                 <div class="group bg-darkbg rounded-xl overflow-hidden border border-gray-800 hover:border-accent transition-all duration-300 hover:-translate-y-2 flex flex-col">
+                    <div class="h-48 bg-gray-700 overflow-hidden relative">
+                         <img src="https://via.placeholder.com/600x300/1e293b/3b82f6?text=MedicSite+Web" alt="MedicSite" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition transform group-hover:scale-105 duration-500">
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col">
+                         <h3 class="text-xl font-bold mb-2 flex justify-between items-center">
+                            MedicSite
+                            <a href="https://github.com/DhrG23/Medic-Site.git" target="_blank" class="text-secondary hover:text-accent"><i class="fa-brands fa-github text-xl"></i></a>
+                        </h3>
+                        <p class="text-secondary text-sm mb-4 leading-relaxed">
+                            A comprehensive healthcare platform integrating Deep Learning models for disease prediction. The system processes medical imagery to assist doctors in early diagnostics.
+                        </p>
+
+                        <div class="mb-4">
+                            <h4 class="text-xs font-bold text-gray-400 uppercase tracking-wide mb-2">Key Features:</h4>
+                            <ul class="text-sm text-gray-400 list-disc list-inside space-y-1">
+                                <li><strong>Lung & Breast Cancer:</strong> CNN Detection models</li>
+                                <li><strong>Full Stack:</strong> Seamless Model-to-UI pipeline</li>
+                                <li><strong>Optimization:</strong> Low-latency inference</li>
+                            </ul>
+                        </div>
+
+                        <div class="mt-auto pt-4 border-t border-gray-800">
+                            <p class="text-xs text-accent font-semibold mb-2"><i class="fa-solid fa-trophy mr-1"></i> AI Youth Super Champ 2024</p>
+                            <div class="flex flex-wrap gap-2 text-xs font-mono text-blue-300">
+                                <span class="bg-blue-900/30 px-2 py-1 rounded">TensorFlow</span>
+                                <span class="bg-blue-900/30 px-2 py-1 rounded">CNNs</span>
+                                <span class="bg-blue-900/30 px-2 py-1 rounded">Web Dev</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
 
                 <div class="group bg-darkbg rounded-xl overflow-hidden border border-gray-800 hover:border-accent transition-all duration-300 hover:-translate-y-2">
                     <div class="h-48 bg-gray-700 overflow-hidden relative">
@@ -184,40 +271,85 @@
         </div>
     </section>
 
-    <section id="achievements" class="py-24">
+<section id="achievements" class="py-24">
         <div class="container mx-auto px-6 flex flex-col md:flex-row gap-12">
             
             <div class="md:w-1/2">
-                 <h2 class="section-title text-3xl font-bold mb-8 flex items-center"><span class="text-accent mr-4">03.</span> Achievements</h2>
-                 <ul class="space-y-6">
-                    <li class="flex items-start">
-                        <span class="text-accent mt-1 mr-4"><i class="fa-solid fa-award"></i></span>
-                        <div>
-                            <h4 class="text-lg font-bold">National Showcase to Prime Minister of India</h4>
-                            <p class="text-secondary text-sm">Selected to present RespiroGuard prototype directly to the PM at Pariksha Pe Charcha 2024.</p>
-                        </div>
-                    </li>
-                    <li class="flex items-start">
-                        <span class="text-accent mt-1 mr-4"><i class="fa-solid fa-award"></i></span>
-                        <div>
-                            <h4 class="text-lg font-bold">Top 20 AI Youth Innovator</h4>
-                            <p class="text-secondary text-sm">Awarded by 1 Million for 1 Billion (1M1B) foundation.</p>
-                        </div>
-                    </li>
-                    <li class="flex items-start">
-                        <span class="text-secondary mt-1 mr-4"><i class="fa-solid fa-trophy"></i></span>
-                        <div>
-                            <h4 class="font-bold">Top 3 Winner - ISTE AI Innovator Challenge 2024</h4>
-                        </div>
-                    </li>
-                    <li class="flex items-start">
-                        <span class="text-secondary mt-1 mr-4"><i class="fa-solid fa-trophy"></i></span>
-                        <div>
-                            <h4 class="font-bold">Winner - Adobe AI-thon Inter-School Hackathon 2023</h4>
-                        </div>
-                    </li>
-                 </ul>
+                 <h2 class="section-title text-3xl font-bold mb-8 flex items-center"><span class="text-accent mr-4">03.</span> Awards & Experience</h2>
+                 
+                 <div class="border-l-2 border-gray-800 ml-3 space-y-10 pl-8">
+                    
+                    <div class="relative">
+                        <span class="absolute -left-[41px] top-1 h-5 w-5 rounded-full border-4 border-darkbg bg-accent"></span>
+                        <h4 class="text-lg font-bold text-white">Pariksha Pe Charcha 2024 (National Showcase)</h4>
+                        <p class="text-sm text-accent mb-1">Selected Participant</p>
+                        <p class="text-secondary text-sm">One of the few students nationwide selected to present a technical prototype (RespiroGuard) directly to the <strong class="text-gray-300">Prime Minister of India</strong>.</p>
+                    </div>
+
+                    <div class="relative">
+                        <span class="absolute -left-[41px] top-1 h-5 w-5 rounded-full border-4 border-darkbg bg-accent"></span>
+                        <h4 class="text-lg font-bold text-white">Top 3 - AI Innovator Challenge 2024</h4>
+                        <p class="text-sm text-accent mb-1">International Society for Technology in Education (ISTE)</p>
+                        <p class="text-secondary text-sm">Ranked internationally for excellence in educational technology and AI innovation.</p>
+                    </div>
+
+                    <div class="relative">
+                        <span class="absolute -left-[41px] top-1 h-5 w-5 rounded-full border-4 border-darkbg bg-gray-600"></span>
+                        <h4 class="text-lg font-bold text-white">Adobe Student Ambassador (2023)</h4>
+                        <p class="text-secondary text-sm">Selected to represent technology and innovation, fostering digital literacy among peers. Also secured <strong class="text-gray-300">Winner</strong> at the Adobe AI-thon Inter-School Hackathon.</p>
+                    </div>
+
+                    <div class="relative">
+                        <span class="absolute -left-[41px] top-1 h-5 w-5 rounded-full border-4 border-darkbg bg-gray-600"></span>
+                        <h4 class="text-lg font-bold text-white">Leadership & Co-Curricular</h4>
+                        <ul class="text-secondary text-sm list-disc list-inside mt-2 space-y-1">
+                            <li><strong>Web Developer Head:</strong> Wartex School Club (Led digital initiatives)</li>
+                            <li><strong>Sports:</strong> 2nd Position in Intra-School Basketball Tournament.</li>
+                            <li><strong>Zonal Athlete:</strong> Participated in Under-14 Basketball Tournament (Council National Sports).</li>
+                        </ul>
+                    </div>
+                 </div>
             </div>
+
+             <div class="md:w-1/2">
+                <h2 class="section-title text-3xl font-bold mb-8 flex items-center"><span class="text-secondary mr-4">04.</span> Education</h2>
+                <div class="space-y-8 bg-gray-800/30 p-8 rounded-xl border border-gray-800">
+                    
+                    <div>
+                        <div class="flex justify-between items-start mb-1">
+                            <h4 class="text-lg font-bold text-white">B.Tech in Computer Science</h4>
+                            <span class="text-xs font-mono text-accent bg-blue-900/30 px-2 py-1 rounded">2025 – 2029</span>
+                        </div>
+                        <p class="text-gray-400 text-sm">Guru Tegh Bahadur 4th Centenary Engineering College</p>
+                        <p class="text-gray-500 text-xs mt-2">Specialization: Applied AI & Backend Engineering</p>
+                    </div>
+
+                    <hr class="border-gray-700">
+
+                    <div>
+                         <div class="flex justify-between items-start mb-1">
+                            <h4 class="text-lg font-bold text-white">Senior Secondary (Grade 11-12)</h4>
+                            <span class="text-xs font-mono text-gray-500 bg-gray-800 px-2 py-1 rounded">2023 – 2025</span>
+                        </div>
+                        <p class="text-gray-400 text-sm">Shaheed Rajpal DAV Public School, Delhi</p>
+                        <p class="text-gray-500 text-xs mt-2">GPA: 4.0 | Focus: Physics, Chemistry, Math (PCM)</p>
+                    </div>
+
+                    <hr class="border-gray-700">
+
+                    <div>
+                        <div class="flex justify-between items-start mb-1">
+                           <h4 class="text-lg font-bold text-white">High School (Grade 9-10)</h4>
+                           <span class="text-xs font-mono text-gray-500 bg-gray-800 px-2 py-1 rounded">2021 – 2023</span>
+                       </div>
+                       <p class="text-gray-400 text-sm">Holy Angels Sr. Secondary School, Ghaziabad</p>
+                       <p class="text-gray-500 text-xs mt-2">GPA: 3.8 / 4.0</p>
+                   </div>
+
+                </div>
+           </div>
+        </div>
+    </section>
 
              <div class="md:w-1/2">
                 <h2 class="section-title text-3xl font-bold mb-8 flex items-center"><span class="text-secondary mr-4">04.</span> Education</h2>
