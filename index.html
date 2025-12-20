@@ -14,17 +14,17 @@
           theme: {
             extend: {
               colors: {
-                darkbg: '#0f172a',
-                accent: '#3b82f6',
-                secondary: '#94a3b8',
+                darkbg: '#0f172a', // Deep blue-gray background
+                accent: '#3b82f6', // Bright blue for buttons/links
+                secondary: '#94a3b8', // Lighter gray for secondary text
               }
             }
           }
         }
       </script>
       <style>
-        body { font-family: 'Inter', sans-serif; }
-        canvas { touch-action: none; } /* Prevents scrolling while playing on mobile */
+        /* Simple CSS reset and base styles */
+        body { font-family: sans-serif; }
       </style>
 </head>
 <body class="bg-darkbg text-gray-100 leading-relaxed">
@@ -33,10 +33,13 @@
         <div class="container mx-auto px-6 flex justify-between items-center">
             <a href="#" class="text-xl font-bold tracking-wider">DHRUV G.</a>
             <div class="space-x-6 text-sm font-medium hidden md:block">
+                <a href="#about" class="hover:text-accent transition">About</a>
                 <a href="#skills" class="hover:text-accent transition">Skills</a>
                 <a href="#projects" class="hover:text-accent transition">Projects</a>
                 <a href="#achievements" class="hover:text-accent transition">Awards</a>
-                <a href="#game-section" class="px-4 py-2 bg-accent/10 text-accent rounded-full border border-accent/20">Play My Story</a>
+            </div>
+            <div class="md:hidden text-2xl">
+                <i class="fa-solid fa-bars"></i>
             </div>
         </div>
     </nav>
@@ -51,254 +54,201 @@
                     First-year CS undergraduate specializing in Applied AI. Combining cutting-edge LLMs with robust engineering to solve real-world problems.
                 </p>
                 <div class="flex gap-4 justify-center md:justify-start">
-                    <a href="#projects" class="px-8 py-3 bg-accent hover:bg-blue-600 text-white rounded-md font-medium transition shadow-lg shadow-blue-500/25">View My Work</a>
-                    <a href="mailto:dhruv23gautam@gmail.com" class="px-8 py-3 border border-accent text-accent hover:bg-accent/10 rounded-md font-medium transition">Contact Me</a>
+                    <a href="#projects" class="px-8 py-3 bg-accent hover:bg-blue-600 text-white rounded-md font-medium transition shadow-lg shadow-blue-500/25">
+                        View My Work
+                    </a>
+                    <a href="mailto:dhruv23gautam@gmail.com" class="px-8 py-3 border border-accent text-accent hover:bg-accent/10 rounded-md font-medium transition">
+                        Contact Me
+                    </a>
+                </div>
+                 <div class="mt-12 flex gap-6 justify-center md:justify-start text-2xl text-secondary">
+                    <a href="[YOUR LINKEDIN URL]" target="_blank" class="hover:text-accent transition"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/DhrG23" target="_blank" class="hover:text-accent transition"><i class="fa-brands fa-github"></i></a>
+                    <a href="mailto:dhruv23gautam@gmail.com" class="hover:text-accent transition"><i class="fa-solid fa-envelope"></i></a>
                 </div>
             </div>
-        </div>
+             </div>
     </section>
 
     <section class="bg-blue-900/30 border-y border-blue-900/50 py-8">
         <div class="container mx-auto px-6 text-center">
             <p class="text-lg md:text-xl font-semibold">
                 <i class="fa-solid fa-trophy text-accent mr-2"></i>
-                Top 20 <span class="text-accent">India AI Youth Innovator</span> & Presented to the <span class="text-accent">Prime Minister of India</span>.
+                Recognized as a <span class="text-accent">Top 20 AI Youth Innovator</span> & selected to present technical prototypes to the <span class="text-accent">Prime Minister of India</span>.
             </p>
         </div>
     </section>
 
+
     <section id="skills" class="py-24">
         <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-bold mb-12 flex items-center"><span class="text-accent mr-4">01.</span> Technical Skills</h2>
+            <h2 class="section-title text-3xl font-bold mb-12 flex items-center"><span class="text-accent mr-4">01.</span> Technical Skills</h2>
+            
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-gray-800/50 p-6 rounded-lg border border-gray-700">
-                    <h3 class="text-xl font-semibold mb-4 text-accent"><i class="fa-solid fa-brain mr-2"></i> AI & ML</h3>
-                    <ul class="space-y-2 text-secondary text-sm">
-                        <li>Ollama (Local LLMs)</li>
-                        <li>Hugging Face Transformers</li>
-                        <li>TensorFlow / Keras</li>
-                        <li>Computer Vision (CNNs)</li>
+                <div class="bg-gray-800/50 p-6 rounded-lg border border-gray-700 hover:border-accent transition">
+                    <h3 class="text-xl font-semibold mb-4 text-accent"><i class="fa-solid fa-brain mr-2"></i> AI & Machine Learning</h3>
+                    <ul class="space-y-2 text-secondary">
+                        <li><i class="fa-solid fa-check text-xs mr-2"></i> Ollama (Local LLMs)</li>
+                        <li><i class="fa-solid fa-check text-xs mr-2"></i> Hugging Face Transformers</li>
+                        <li><i class="fa-solid fa-check text-xs mr-2"></i> TensorFlow / Keras</li>
+                        <li><i class="fa-solid fa-check text-xs mr-2"></i> Computer Vision (CNNs)</li>
+                        <li><i class="fa-solid fa-check text-xs mr-2"></i> Audio Signal Processing</li>
                     </ul>
                 </div>
-                <div class="bg-gray-800/50 p-6 rounded-lg border border-gray-700">
-                    <h3 class="text-xl font-semibold mb-4 text-accent"><i class="fa-solid fa-server mr-2"></i> Backend</h3>
-                    <ul class="space-y-2 text-secondary text-sm">
-                        <li>FastAPI (Python)</li>
-                        <li>Docker & Git</li>
-                        <li>REST APIs / Postman</li>
+                 <div class="bg-gray-800/50 p-6 rounded-lg border border-gray-700 hover:border-accent transition">
+                    <h3 class="text-xl font-semibold mb-4 text-accent"><i class="fa-solid fa-server mr-2"></i> Backend & Tools</h3>
+                    <ul class="space-y-2 text-secondary">
+                        <li><i class="fa-solid fa-check text-xs mr-2"></i> FastAPI (Python)</li>
+                        <li><i class="fa-solid fa-check text-xs mr-2"></i> Docker & Containerization</li>
+                        <li><i class="fa-solid fa-check text-xs mr-2"></i> Git & GitHub</li>
+                        <li><i class="fa-solid fa-check text-xs mr-2"></i> REST APIs / Postman</li>
+                        <li><i class="fa-solid fa-check text-xs mr-2"></i> VS Code</li>
                     </ul>
                 </div>
-                <div class="bg-gray-800/50 p-6 rounded-lg border border-gray-700">
+                 <div class="bg-gray-800/50 p-6 rounded-lg border border-gray-700 hover:border-accent transition">
                     <h3 class="text-xl font-semibold mb-4 text-accent"><i class="fa-solid fa-code mr-2"></i> Languages</h3>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="bg-gray-700 px-2 py-1 rounded text-xs">Python</span>
-                        <span class="bg-gray-700 px-2 py-1 rounded text-xs">Java</span>
-                        <span class="bg-gray-700 px-2 py-1 rounded text-xs">JavaScript</span>
+                    <div class="flex flex-wrap gap-3 mt-4">
+                        <span class="px-3 py-1 bg-blue-900/50 text-blue-200 text-sm rounded-full">Python (Advanced)</span>
+                        <span class="px-3 py-1 bg-gray-700 text-gray-300 text-sm rounded-full">Java</span>
+                        <span class="px-3 py-1 bg-gray-700 text-gray-300 text-sm rounded-full">JavaScript</span>
+                        <span class="px-3 py-1 bg-gray-700 text-gray-300 text-sm rounded-full">HTML5/CSS3</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+
     <section id="projects" class="py-24 bg-gray-900/50">
         <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-bold mb-12 flex items-center"><span class="text-accent mr-4">02.</span> Projects</h2>
+            <h2 class="section-title text-3xl font-bold mb-12 flex items-center"><span class="text-accent mr-4">02.</span> Featured Projects</h2>
+
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
                 
-                <div class="bg-darkbg rounded-xl border border-gray-800 overflow-hidden hover:border-accent transition group">
-                    <div class="h-48 bg-gray-700 relative">
-                        <div class="absolute top-0 right-0 bg-accent text-white text-xs font-bold px-3 py-1">National Presentation</div>
-                        <img src="https://via.placeholder.com/600x300/1e293b/3b82f6?text=RespiroGuard" class="w-full h-full object-cover opacity-50 group-hover:opacity-100 transition">
+                <div class="group bg-darkbg rounded-xl overflow-hidden border border-gray-800 hover:border-accent transition-all duration-300 hover:-translate-y-2">
+                    <div class="h-48 bg-gray-700 overflow-hidden relative">
+                         <img src="https://via.placeholder.com/600x300/1e293b/3b82f6?text=LangCoach+Project" alt="LangCoach" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition">
                     </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2">RespiroGuard</h3>
-                        <p class="text-secondary text-sm mb-4">Audio AI system for detecting respiratory anomalies via cough acoustics.</p>
-                        <ul class="text-xs text-gray-500 mb-4 list-disc list-inside">
-                            <li>Presented at Pariksha Pe Charcha 2024</li>
-                            <li>Spectral audio analysis pipeline</li>
-                        </ul>
-                        <a href="https://github.com/DhrG23/RespiroGuard.git" class="text-accent text-sm font-bold">View Code →</a>
+                        <h3 class="text-xl font-bold mb-2 flex justify-between">
+                            LangCoach
+                            <div class="flex gap-3 text-secondary">
+                                <a href="https://github.com/DhrG23/LangCoach.git" target="_blank" class="hover:text-accent"><i class="fa-brands fa-github"></i></a>
+                                </div>
+                        </h3>
+                        <p class="text-secondary text-sm mb-4">A privacy-focused AI language learning assistant. It integrates Montreal Forced Aligner for phoneme-level feedback and uses Ollama for local LLM inference, ensuring no data leaves the device.</p>
+                        <div class="flex flex-wrap gap-2 text-xs font-mono text-accent">
+                            <span>FastAPI</span> <span>Docker</span> <span>Ollama (Local AI)</span> <span>Python</span>
+                        </div>
                     </div>
                 </div>
 
-                <div class="bg-darkbg rounded-xl border border-gray-800 overflow-hidden hover:border-accent transition group">
-                    <div class="h-48 bg-gray-700">
-                         <img src="https://via.placeholder.com/600x300/1e293b/3b82f6?text=LangCoach" class="w-full h-full object-cover opacity-50 group-hover:opacity-100 transition">
+                <div class="group bg-darkbg rounded-xl overflow-hidden border border-gray-800 hover:border-accent transition-all duration-300 hover:-translate-y-2">
+                    <div class="h-48 bg-gray-700 overflow-hidden relative">
+                        <div class="absolute top-2 right-2 bg-accent text-white text-xs font-bold px-2 py-1 rounded">Presented to PM</div>
+                         <img src="https://via.placeholder.com/600x300/1e293b/3b82f6?text=RespiroGuard" alt="RespiroGuard" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition">
                     </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2">LangCoach</h3>
-                        <p class="text-secondary text-sm mb-4">Local AI language tutor using Ollama and Montreal Forced Aligner.</p>
-                        <ul class="text-xs text-gray-500 mb-4 list-disc list-inside">
-                            <li>100% Data Privacy (Localhost)</li>
-                            <li>Phoneme-level pronunciation feedback</li>
-                        </ul>
-                        <a href="https://github.com/DhrG23/LangCoach.git" class="text-accent text-sm font-bold">View Code →</a>
+                         <h3 class="text-xl font-bold mb-2 flex justify-between">
+                            RespiroGuard
+                            <div class="flex gap-3 text-secondary">
+                                <a href="https://github.com/DhrG23/RespiroGuard.git" target="_blank" class="hover:text-accent"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </h3>
+                        <p class="text-secondary text-sm mb-4">An innovative health-tech prototype that utilizes audio signal processing to detect specific breathing patterns and coughing sounds indicative of respiratory illnesses.</p>
+                        <div class="flex flex-wrap gap-2 text-xs font-mono text-accent">
+                            <span>Audio Processing</span> <span>AI/ML</span> <span>Python</span> <span>HealthTech</span>
+                        </div>
                     </div>
                 </div>
 
-                <div class="bg-darkbg rounded-xl border border-gray-800 overflow-hidden hover:border-accent transition group">
-                    <div class="h-48 bg-gray-700">
-                         <img src="https://via.placeholder.com/600x300/1e293b/3b82f6?text=MedicSite" class="w-full h-full object-cover opacity-50 group-hover:opacity-100 transition">
+                 <div class="group bg-darkbg rounded-xl overflow-hidden border border-gray-800 hover:border-accent transition-all duration-300 hover:-translate-y-2">
+                    <div class="h-48 bg-gray-700 overflow-hidden relative">
+                         <img src="https://via.placeholder.com/600x300/1e293b/3b82f6?text=MedicSite+AI" alt="MedicSite" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition">
                     </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2">MedicSite AI</h3>
-                        <p class="text-secondary text-sm mb-4">Healthcare platform with integrated CNN models for cancer detection.</p>
-                        <ul class="text-xs text-gray-500 mb-4 list-disc list-inside">
-                            <li>TensorFlow image classification</li>
-                            <li>AI Youth Super Champ 2024</li>
-                        </ul>
-                        <a href="https://github.com/DhrG23/Medic-Site.git" class="text-accent text-sm font-bold">View Code →</a>
+                         <h3 class="text-xl font-bold mb-2 flex justify-between">
+                            MedicSite
+                            <div class="flex gap-3 text-secondary">
+                                <a href="https://github.com/DhrG23/Medic-Site.git" target="_blank" class="hover:text-accent"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </h3>
+                        <p class="text-secondary text-sm mb-4">An AI-powered healthcare website. I trained custom TensorFlow CNN models to detect Lung & Breast Cancer from medical imagery and integrated the inference engine into the web UI.</p>
+                        <div class="flex flex-wrap gap-2 text-xs font-mono text-accent">
+                            <span>TensorFlow</span> <span>CNNs</span> <span>Web Dev</span> <span>HTML/JS</span>
+                        </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
 
     <section id="achievements" class="py-24">
         <div class="container mx-auto px-6 flex flex-col md:flex-row gap-12">
+            
             <div class="md:w-1/2">
-                 <h2 class="text-3xl font-bold mb-8 flex items-center"><span class="text-accent mr-4">03.</span> Journey</h2>
-                 <div class="border-l-2 border-gray-800 pl-6 space-y-8">
-                    <div>
-                        <h4 class="font-bold text-white leading-none">Top 20 India AI Youth Awards</h4>
-                        <p class="text-xs text-accent mb-2">1 Million for 1 Billion (1M1B)</p>
-                    </div>
-                    <div>
-                        <h4 class="font-bold text-white leading-none">Adobe Student Ambassador</h4>
-                        <p class="text-xs text-accent mb-2">Adobe AI-thon Winner 2023</p>
-                    </div>
-                    <div>
-                        <h4 class="font-bold text-white leading-none">Basketball (Zonal & Intra-school)</h4>
-                        <p class="text-xs text-gray-500 mb-2">Under-14 Zonal Participant | 2nd Place Intra-school</p>
-                    </div>
-                 </div>
+                 <h2 class="section-title text-3xl font-bold mb-8 flex items-center"><span class="text-accent mr-4">03.</span> Achievements</h2>
+                 <ul class="space-y-6">
+                    <li class="flex items-start">
+                        <span class="text-accent mt-1 mr-4"><i class="fa-solid fa-award"></i></span>
+                        <div>
+                            <h4 class="text-lg font-bold">National Showcase to Prime Minister of India</h4>
+                            <p class="text-secondary text-sm">Selected to present RespiroGuard prototype directly to the PM at Pariksha Pe Charcha 2024.</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-accent mt-1 mr-4"><i class="fa-solid fa-award"></i></span>
+                        <div>
+                            <h4 class="text-lg font-bold">Top 20 AI Youth Innovator</h4>
+                            <p class="text-secondary text-sm">Awarded by 1 Million for 1 Billion (1M1B) foundation.</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-secondary mt-1 mr-4"><i class="fa-solid fa-trophy"></i></span>
+                        <div>
+                            <h4 class="font-bold">Top 3 Winner - ISTE AI Innovator Challenge 2024</h4>
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-secondary mt-1 mr-4"><i class="fa-solid fa-trophy"></i></span>
+                        <div>
+                            <h4 class="font-bold">Winner - Adobe AI-thon Inter-School Hackathon 2023</h4>
+                        </div>
+                    </li>
+                 </ul>
             </div>
 
              <div class="md:w-1/2">
-                <h2 class="text-3xl font-bold mb-8 flex items-center"><span class="text-secondary mr-4">04.</span> Education</h2>
-                <div class="space-y-6">
-                    <div>
-                        <h4 class="font-bold">B.Tech in Computer Science</h4>
-                        <p class="text-sm text-secondary">GTB4CEC, Delhi | 2025 – 2029</p>
+                <h2 class="section-title text-3xl font-bold mb-8 flex items-center"><span class="text-secondary mr-4">04.</span> Education</h2>
+                <div class="space-y-8 border-l-2 border-gray-800 pl-6 ml-2">
+                    <div class="relative">
+                        <span class="absolute -left-[33px] top-1 h-4 w-4 rounded-full bg-accent"></span>
+                        <h4 class="text-lg font-bold">B.Tech in Computer Science Engineering</h4>
+                        <p class="text-accent text-sm">Guru Tegh Bahadur 4th Centenary Engineering College</p>
+                        <p class="text-secondary text-sm italic">2025 – 2029 (Expected)</p>
                     </div>
-                    <div>
-                        <h4 class="font-bold">Grade 11-12 (PCM)</h4>
-                        <p class="text-sm text-secondary">Shaheed Rajpal DAV | GPA: 4.0</p>
+                    <div class="relative">
+                        <span class="absolute -left-[33px] top-1 h-4 w-4 rounded-full bg-gray-700"></span>
+                        <h4 class="text-lg font-bold">Senior Secondary (PCM)</h4>
+                        <p class="text-secondary text-sm">Shaheed Rajpal DAV Public School</p>
+                        <p class="text-secondary text-sm italic">2023 – 2025</p>
                     </div>
                 </div>
            </div>
         </div>
     </section>
 
-    <section id="game-section" class="py-20 bg-gray-900 border-t border-gray-800 text-center">
-        <h2 class="text-3xl font-bold mb-2">The Journey Game</h2>
-        <p class="text-secondary mb-8 text-sm px-6">Flap through my milestones. <span class="text-accent font-bold underline">Space or Click</span> to Fly!</p>
-        
-        <div class="relative inline-block border-4 border-gray-800 rounded-lg shadow-2xl bg-black">
-            <canvas id="gameCanvas" width="400" height="400" class="max-w-full"></canvas>
-            <div id="game-overlay" class="absolute inset-0 bg-darkbg/90 flex flex-col items-center justify-center hidden p-6">
-                <h3 class="text-2xl font-bold mb-4">Journey Paused</h3>
-                <p id="final-story" class="text-accent mb-6 text-sm"></p>
-                <button onclick="resetGame()" class="px-8 py-2 bg-accent text-white rounded-full font-bold transition">Restart Year 2021</button>
+    <footer class="bg-darkbg py-8 text-center text-secondary border-t border-gray-800">
+        <div class="container mx-auto px-6">
+            <div class="flex justify-center gap-6 mb-4 text-xl">
+                <a href="[YOUR LINKEDIN URL]" target="_blank" class="hover:text-accent transition"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/DhrG23" target="_blank" class="hover:text-accent transition"><i class="fa-brands fa-github"></i></a>
+                <a href="mailto:dhruv23gautam@gmail.com" class="hover:text-accent transition"><i class="fa-solid fa-envelope"></i></a>
             </div>
+            <p class="text-sm">Designed & Built by Dhruv Gautam using HTML & Tailwind CSS.</p>
         </div>
-        <div class="mt-4 h-12 flex items-center justify-center">
-            <p id="current-milestone" class="text-lg font-mono text-accent">Score points to unlock my story!</p>
-        </div>
-    </section>
-
-    <footer class="py-12 text-center text-gray-500 text-sm border-t border-gray-800">
-        <div class="flex justify-center gap-6 mb-6 text-xl">
-            <a href="https://github.com/DhrG23" target="_blank" class="hover:text-accent"><i class="fa-brands fa-github"></i></a>
-            <a href="mailto:dhruv23gautam@gmail.com" class="hover:text-accent"><i class="fa-solid fa-envelope"></i></a>
-        </div>
-        <p>© 2025 Dhruv Gautam. Built with Tailwind CSS.</p>
     </footer>
 
-    <script>
-        const canvas = document.getElementById('gameCanvas');
-        const ctx = canvas.getContext('2d');
-        const milestoneText = document.getElementById('current-milestone');
-        const overlay = document.getElementById('game-overlay');
-        const finalStory = document.getElementById('final-story');
-
-        const bird = { x: 50, y: 150, w: 20, h: 20, gravity: 0.5, lift: -8, velocity: 0 };
-        let pipes = [];
-        let score = 0;
-        let gameActive = false;
-
-        const milestones = [
-            { score: 1, text: "🏀 2021: Started Zonal Basketball journey!" },
-            { score: 3, text: "🎨 2023: Became Adobe Student Ambassador" },
-            { score: 5, text: "💻 2023: Won Adobe AI-thon Hackathon" },
-            { score: 7, text: "🇮🇳 2024: Presented to PM of India" },
-            { score: 10, text: "🚀 2025: Starting B.Tech & looking for Internships!" }
-        ];
-
-        function createPipe() {
-            const gap = 120;
-            const top = Math.random() * (canvas.height - gap - 40) + 20;
-            pipes.push({ x: canvas.width, top, bottom: canvas.height - top - gap, passed: false });
-        }
-
-        function draw() {
-            ctx.fillStyle = "#0f172a";
-            ctx.fillRect(0, 0, canvas.width, canvas.height);
-
-            // Bird
-            ctx.fillStyle = "#3b82f6";
-            ctx.fillRect(bird.x, bird.y, bird.w, bird.h);
-
-            // Pipes
-            ctx.fillStyle = "#1e293b";
-            pipes.forEach(pipe => {
-                ctx.fillRect(pipe.x, 0, 40, pipe.top);
-                ctx.fillRect(pipe.x, canvas.height - pipe.bottom, 40, pipe.bottom);
-                pipe.x -= 2;
-            });
-
-            if (gameActive) {
-                bird.velocity += bird.gravity;
-                bird.y += bird.velocity;
-
-                if (Math.floor(Date.now() / 10) % 100 === 0) createPipe();
-
-                pipes.forEach(pipe => {
-                    if (bird.x + bird.w > pipe.x && bird.x < pipe.x + 40 && (bird.y < pipe.top || bird.y + bird.h > canvas.height - pipe.bottom)) endGame();
-                    if (!pipe.passed && pipe.x < bird.x) {
-                        pipe.passed = true;
-                        score++;
-                        const milestone = milestones.find(m => m.score === score);
-                        if (milestone) milestoneText.innerText = milestone.text;
-                    }
-                });
-
-                if (bird.y + bird.h > canvas.height || bird.y < 0) endGame();
-                pipes = pipes.filter(p => p.x > -40);
-                requestAnimationFrame(draw);
-            }
-        }
-
-        function endGame() {
-            gameActive = false;
-            overlay.classList.remove('hidden');
-            finalStory.innerText = `You traveled ${score} years into Dhruv's story!`;
-        }
-
-        function resetGame() {
-            bird.y = 150; bird.velocity = 0; pipes = []; score = 0;
-            gameActive = true;
-            overlay.classList.add('hidden');
-            milestoneText.innerText = "Fly to see 2021...";
-            draw();
-        }
-
-        const handleInput = () => { if(!gameActive && overlay.classList.contains('hidden')) { gameActive=true; draw(); } bird.velocity = bird.lift; };
-        window.addEventListener('keydown', (e) => { if(e.code === 'Space') handleInput(); });
-        canvas.addEventListener('mousedown', handleInput);
-        canvas.addEventListener('touchstart', (e) => { e.preventDefault(); handleInput(); });
-
-        draw();
-    </script>
 </body>
 </html>
